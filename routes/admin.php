@@ -15,3 +15,8 @@ Route::patch('profile', [ProfileController::class, 'update'])->name('profile.upd
 
 Route::get('password', [PasswordController::class, 'edit'])->name('password.edit');
 Route::put('password', [PasswordController::class, 'update'])->name('password.update');
+use App\Http\Controllers\Admin\ActivityController;
+
+Route::resource('activities', ActivityController::class);
+Route::patch('activities/{activity}/toggle-status', [ActivityController::class, 'toggleStatus'])
+    ->name('activities.toggle-status');

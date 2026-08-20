@@ -28,6 +28,7 @@
                         ['label' => 'Dashboard',       'route' => 'admin.dashboard'],
                         ['label' => 'Perfil',          'route' => 'admin.profile.edit'],
                         ['label' => 'Guia de estilos', 'route' => 'admin.styleguide'],
+                        ['label' => 'Actividades', 'route' => 'admin.activities.index'],
                     ];
                 @endphp
 
